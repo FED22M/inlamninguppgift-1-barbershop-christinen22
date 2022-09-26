@@ -3,11 +3,29 @@
 
 
 .container {
+
     
 }
 .header {
     display: flex;
-}    
+    justify-content: baseline;
+    background-color: #333333;
+
+}  
+.logo {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    align-self: flex-end;
+}  
+
+.top-nav li {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 15px;
+    align-self: flex-start;
+
+
+}
 .main {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -44,9 +62,7 @@
     -webkit-text-stroke-color: white;
     font-size: 56px;
 }
-.top-nav {
 
-}
 h1, h2, h3 {
     font-family: 'Barlow', sans-serif;
 }
@@ -67,4 +83,28 @@ button {
     letter-spacing: 1px;
     border: 2px solid #CC9966; 
     background-color: transparent;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 100px);
+}
+.styles {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.trim {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+.shave {
+    grid-column-start: -4;
+    grid-column-end: -3;
+
+}
+.schampoo {
+    grid-column-start: -1;
+    grid-column-end: -2;
 }
