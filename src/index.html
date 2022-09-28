@@ -7,43 +7,62 @@
         <title>Barbershop</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="stylesheetdt.css">
     </head>
     <body>
-        <div class="container">
-            <div class="header">
+        <div class="wrapper">
             <header>
-                <h1 class="logo">BARBERSHOP</h1>
-                <nav class="top-nav">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Pricing</li>
-                        <li>Gallery</li>
-                        <li>Team</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+                <div id=topBar>
+                    <h1 class="logo"><a href="index.html">barbershop</a></h1>
+                </div>
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" role="button">menu
+                </label>
+                <nav class="main-nav">
+                    <ul class="main-nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>                    
                 </nav>
             </header>
-            </div>
-        <div class="main">
-            <span class="welcome">WELCOME TO BARBERSHOP</span>
-            <h1 class="bold"">WE WILL MAKE 
-            <span>YOUR</span>
-            <br>
-            <span>STYLE</span>
-            OF YOUR DREAMS</span>
+            <div class="main">
+            <span class="welcome">welcome to barbershop</span>
+            <h1 class="bold"">we will make
+            <span>your</span>
+            <span>style</span>
+            of your dreams</span>
             </h1>
             <p class="mainp">A small river named Duden flows by their place and supplies it with the necessaryu regelialia. It is a pardisematic country, in which roasted parts of sentences fly into your mouth.</p>
             <button class="more">LEARN MORE ABOUT US</button>
-        </div>
-            <div class="wrapper">
-                <div class="styles"><p>Styla mig</p></div>
-                <div class="trim"><p>Trimma mig</p></div>
-                <div class="shave"><p>Raka mig</p></div>
-                <div class="schampoo"><p>Schamponera mig</p></div>
             </div>
+            <div class="wrapper-below">
+                <div class="styles">
+                    <img src="style.png" alt ="style">
+                    <h2>hair styles</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessaryu regelialia. It is a pardisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+                <div class="trim">
+                    <img src="beard.png" alt ="trim">
+                    <h2>beard trim</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessaryu regelialia. It is a pardisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+                <div class="shave">
+                    <img src="shave.png" alt ="shave">
+                    <h2>hot shave</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessaryu regelialia. It is a pardisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+                <div class="schampoo">
+                    <img src="schampoo.png" alt ="cat">
+                    <h2>hair schampoo</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessaryu regelialia. It is a pardisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </div>
+        </div>    
         <footer>
             <div class="footer">
                 <div class="barbershop">
@@ -75,7 +94,7 @@
                 <p>+ 2392 3929 210</p>
                 <p>info@yourdomain.com</p>
             </div>
-            </div>
+            
         </footer>
     </body>
 </html>
