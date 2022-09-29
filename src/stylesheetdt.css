@@ -28,12 +28,12 @@ header {
     padding: 10px 16px;
 }
 
-.main-nav-list {
+/*.main-nav-list {
     position: -webkit-sticky;
     position: sticky; 
     top: 0;
 }
-
+*/
 .logo {
     
     text-transform: uppercase;
@@ -191,23 +191,100 @@ button {
 
 .container-about {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 100px;
+    margin-bottom: 100px;
 
 }
 
-/*.container-about img {
-    height: 438px;
-    width: 675px;
+.container-about img {
+    align-self: flex-start;
+    flex-basis: 350px;
+    padding: 25px;
 
 }
 .about {
+   flex-basis: 500px;
+   align-self: flex-end;
 
    
 }
-*/
+
+/* Testimonial */
+
+.subheading {
+    font-family: 'Barlow', sans-serif;
+    color:#CC9966; 
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-barber {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.roger1, .roger2, .roger3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 350px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20%;
+}
+
+
+.saying {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.fivestars {
+    display: flex;
+    flex-direction: column;
+    
+}
+.stars {
+    color:#CC9966; 
+    margin: 0%;
+    margin-top: 5px;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    
+}
+
+.customer {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color:#CC9966; 
+    margin: 0%;
+}
+
+
 
 /* Footer */
 
@@ -233,7 +310,13 @@ i {
 }
 
 .explore {
-    flex-basis: 200px;
+    flex-basis: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.info {
+    flex-basis: 250px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -287,7 +370,7 @@ input, label {
 }
 
 @media screen and (max-width: 600px) {
-.wrapper-below, .footer-container {
+.wrapper-below, .footer-container, .container-about, .testimonial {
     flex-wrap: wrap;
 }
 
@@ -323,5 +406,8 @@ label {
     top: 50px;
 }
 
+.container-about img {
+    width: 100%;
+}
 
 }
