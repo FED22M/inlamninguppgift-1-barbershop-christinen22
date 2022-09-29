@@ -13,7 +13,7 @@
 
 .wrapper {
     width: 100%;
-    background-image: url("background2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("background2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,6 +25,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding: 10px 16px;
+}
+
+.main-nav-list {
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 0;
 }
 
 .logo {
@@ -41,6 +48,7 @@ header {
     color: white;
     text-decoration: none;
 }
+
 
 .main-nav-list {
     display: flex;
@@ -156,6 +164,7 @@ button {
     height: 200px;
     margin-top: -7.5rem;
     z-index: 1;
+    align-self: center;
 }
 
 .styles {
@@ -189,7 +198,7 @@ button {
 
 }
 
-.container-about img {
+/*.container-about img {
     height: 438px;
     width: 675px;
 
@@ -198,18 +207,19 @@ button {
 
    
 }
+*/
 
 /* Footer */
 
 .footer-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .social {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    flex-basis: 200px;
+
 }
 h3 {
     color: white;
@@ -219,6 +229,54 @@ h3 {
 i {
     font-size: 25px;
     color:  #CC9966;
+    margin-right: 15px;
+}
+
+.explore {
+    flex-basis: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav-footer li {
+    
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+}
+
+.nav-footer li::before {
+    content: '>';
+    margin-right: 5px;
+}
+
+.nav-footer a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact {
+    flex-basis: 225px;
+}
+
+.contact p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (min-width:800px) {
@@ -227,11 +285,11 @@ input, label {
 }
 
 }
+
 @media screen and (max-width: 600px) {
 .wrapper-below, .footer-container {
     flex-wrap: wrap;
-
-    }
+}
 
     /*toggle nav*/
 
@@ -254,7 +312,7 @@ label {
     font-family: 'Barlow', sans-serif;
 }
 
-nav {
+.main-nav {
     position: absolute;
     top: -100px;
     width: 100%; 
