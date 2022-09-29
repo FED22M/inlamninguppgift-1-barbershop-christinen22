@@ -38,14 +38,14 @@ header {
     
     text-transform: uppercase;
     font-family: 'Barlow', sans-serif;
-    color: white;
+    color: #ebe8de;
     background: transparent;
 }
 
 .logo a {
     text-transform: uppercase;
     font-family: 'Barlow', sans-serif;
-    color: white;
+    color: #ebe8de;
     text-decoration: none;
 }
 
@@ -54,21 +54,23 @@ header {
     display: flex;
     padding: 0;
     margin: 1rem 0;
-    justify-content: center;
+    justify-content: space-between;
     text-transform: uppercase;
+    flex-wrap: wrap; /* för att få plats */
+    
   }
   
 .main-nav-list a {
     padding: 0.5em 0.8em;
     display: inline-block;
-    color: white;
+    color: #ebe8de;
     text-decoration: none;
   }
   
 .main-nav-list li {
     background-color: transparent;
     font-family: 'Barlow', sans-serif;
-    color: white;
+    color: #ebe8de;
     display: inline-block;
     font-weight: bold;
   }
@@ -88,7 +90,7 @@ header {
     margin-top: 100px;
 }
 
-.welcome, .bold, .bold span, .more{
+.welcome, .bold, .bold span, .mainbold, .more{
     gap: 1rem;
     text-transform: uppercase;
 }
@@ -102,18 +104,18 @@ header {
     margin-bottom: 0;
     line-height: 1,8;
 }
-.bold {
+.bold, .mainbold {
     font-family: 'Barlow', sans-serif;
-    color: white;
+    color: #ebe8de;
     font-size: 46px;
     text-transform: uppercase;
     margin-top: 0;
 }    
-.bold span {
+.mainbold span {
     font-family: 'Barlow', sans-serif;
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #ebe8de;
     font-size: 46px;
     text-transform: uppercase;
 }
@@ -122,10 +124,10 @@ h1, h2, h3 {
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
 }
-.mainp {
+.mainp, .mainp-only {
     font-family: 'Poppins', sans-serif;
-    color: white;
-    border-left: 2px solid #CC9966;
+    color: #ebe8de;
+
 }
 button {
     font-weight: bold;
@@ -146,13 +148,13 @@ button {
 
 .wrapper-below h2 {
     margin-top: 5rem;
-    color: white;
+    color: #ebe8de;
     text-align: center;
 }
 
 .wrapper-below p {
     margin-bottom: 8rem;
-    color: white;
+    color: #ebe8de;
     font-family: 'Poppins', sans-serif;
     padding: 1.5rem;
     text-align: center;
@@ -164,7 +166,9 @@ button {
     height: 200px;
     margin-top: -7.5rem;
     z-index: 1;
-    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .styles {
@@ -206,9 +210,30 @@ button {
 .about {
    flex-basis: 500px;
    align-self: flex-end;
-
-   
 }
+
+.experience {
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    margin-top: 25px;
+    border: 2px solid #ebe8de;
+}
+
+.col1 {
+    flex-direction: row;
+  
+}
+
+.col2 {
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ebe8de;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+}
+
 
 /* Testimonial */
 
@@ -223,7 +248,7 @@ button {
 
 .about-barber {
     font-family: 'Barlow', sans-serif;
-    color: white;
+    color: #ebe8de;
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
@@ -243,7 +268,7 @@ button {
     flex-basis: 350px;
     margin: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: #ebe8de;
     border-radius: 20%;
 }
 
@@ -299,7 +324,7 @@ button {
 
 }
 h3 {
-    color: white;
+    color: #ebe8de;
     
 }
 
@@ -328,7 +353,7 @@ i {
 
 .nav-footer li {
     
-    color: white;
+    color: #ebe8de;
     font-family: 'Poppins', sans-serif;
     margin: 5px;
 }
@@ -339,7 +364,7 @@ i {
 }
 
 .nav-footer a {
-    color: white;
+    color: #ebe8de;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 
@@ -350,7 +375,7 @@ i {
 }
 
 .contact p {
-    color: white;
+    color: #ebe8de;
     font-family: 'Poppins', sans-serif;
     
     
@@ -358,13 +383,45 @@ i {
 
 .contact a {
     text-decoration: none;
-    color: white;
+    color: #ebe8de;
     font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (min-width:800px) {
 input, label {
     visibility: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 400px;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+
+.welcome {
+    align-self: flex-start;
+    max-width: 40%;
+    
+}
+
+.mainbold {
+    max-width: 40%;
+}
+
+.mainp-only {
+    max-width: 40%;
+    align-self: flex-end;
+    border-left: 2px solid #CC9966; 
+    padding-left: 100px;
+}
+
+.more {
+    align-self: center;
 }
 
 }
@@ -374,6 +431,10 @@ input, label {
     flex-wrap: wrap;
 }
 
+.footer-container {
+    justify-content: flex-start;
+    margin-left: 10px;
+}
     /*toggle nav*/
 
 input {
@@ -396,12 +457,30 @@ label {
 }
 
 .main-nav {
+    display: flex;
     position: absolute;
     top: -100px;
-    width: 100%; 
     transition: all .5s ease-out;
+
 }
 
+.main-nav-list a {
+    display: inline-block;
+    color: #ebe8de;
+    text-decoration: none;
+  }
+  
+.main-nav-list li {
+    background-color: transparent;
+    font-family: 'Barlow', sans-serif;
+    color: #ebe8de;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+.main-nav-list li:hover {
+    color: #CC9966;
+  }
 #toggle:checked ~ nav {
     top: 50px;
 }
