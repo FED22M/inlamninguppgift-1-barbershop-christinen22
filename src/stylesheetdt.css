@@ -26,14 +26,13 @@ header {
     justify-content: space-between;
     align-items: baseline;
     padding: 10px 16px;
-}
-
-/*.main-nav-list {
-    position: -webkit-sticky;
     position: sticky; 
     top: 0;
+    background-color: #141b25;
+    opacity: 0.5;
 }
-*/
+
+
 .logo {
     
     text-transform: uppercase;
@@ -111,6 +110,7 @@ header {
     text-transform: uppercase;
     margin-top: 0;
 }    
+
 .mainbold span {
     font-family: 'Barlow', sans-serif;
     color: transparent;
@@ -136,6 +136,11 @@ button {
     letter-spacing: 1px;
     border: 2px solid #CC9966; 
     background-color: transparent;
+}
+
+.more {
+    align-self: flex-start;
+    margin-left: 100px;
 }
 
 /*Wrapper nere*/
@@ -392,7 +397,7 @@ i {
     font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:1000px) {
 input, label {
     visibility: hidden;
 }
@@ -425,9 +430,10 @@ input, label {
     padding-left: 100px;
 }
 
-.more {
-    align-self: center;
-}
+/*.more {
+    align-self: flex-start;
+    margin-left: 100px;
+}*/
 
 }
 
@@ -488,6 +494,11 @@ label {
   }
 #toggle:checked ~ nav {
     top: 50px;
+}
+
+.more {
+    align-self: center;
+    margin-left: 100px;
 }
 
 .container-about img {
