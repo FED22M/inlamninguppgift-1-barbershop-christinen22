@@ -26,10 +26,10 @@ header {
     justify-content: space-between;
     align-items: baseline;
     padding: 10px 16px;
-    position: sticky; 
     top: 0;
     background-color: #141b25;
     opacity: 0.5;
+    position: sticky;
 }
 
 
@@ -55,7 +55,6 @@ header {
     margin: 1rem 0;
     justify-content: space-between;
     text-transform: uppercase;
-    flex-wrap: wrap; /* för att få plats */
     
   }
   
@@ -209,7 +208,6 @@ button {
 
 .container-about img {
     align-self: flex-start;
-    flex-basis: 300px;
     padding: 25px;
 
 }
@@ -397,6 +395,8 @@ i {
 }
 
 @media screen and (min-width:1000px) {
+
+
 .about {
         flex-basis: 500px;
         align-self: flex-end;
@@ -446,13 +446,13 @@ input, label {
 }
 
 .about {
-    flex-basis: 250px;
     align-self: flex-end;
 }
 
+
 .footer-container {
     justify-content: flex-start;
-    margin-left: 10px;
+    margin-left: 0px;
 }
     /*toggle nav*/
 
@@ -467,7 +467,7 @@ label {
     z-index: 100;
     top: 25px;
     right: 20px;
-    padding: 6px 0;
+    padding-top: 6px;
     cursor: pointer;
     color:  #CC9966;
     font-weight: bold;
@@ -480,6 +480,13 @@ label {
     position: absolute;
     top: -100px;
     transition: all .5s ease-out;
+
+}
+
+.main-nav-list {
+    justify-content: space-between;
+    text-transform: uppercase;
+    flex-wrap: wrap; /* för att få plats */
 
 }
 
